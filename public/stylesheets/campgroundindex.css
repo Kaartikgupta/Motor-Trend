@@ -1,0 +1,175 @@
+*{
+    
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+  
+    
+}
+a {
+  
+   
+    color: inherit;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  
+  .cta {
+    position: relative;
+    margin: auto;
+    padding: 19px 22px;
+    transition: all 0.2s ease;
+  }
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    display: block;
+    border-radius: 28px;
+    background: rgba(255, 171, 157, 0.5);
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+  }
+  .cta span {
+    position: relative;
+    font-size: 13px;
+    text-decoration: none;
+    line-height: 15px;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+  .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #111;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  .cta:hover:before {
+    width: 100%;
+    background: #ffab9d;
+  }
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  .cta:active {
+    transform: scale(0.96);
+    text-decoration: none;
+  }
+  
+.head{
+    color: whitesmoke;
+}
+
+  .card{
+      background: rgb(40, 40, 43);
+      padding:20px;
+      border: none;
+      
+  }
+  .card-img-top{
+      width: 250px;
+      height: 180px;
+  }
+  .card p {
+    color: whitesmoke;
+    font-size:15px;
+    font-weight: 300;
+  }
+  .card h5 {
+      color: beige;
+    margin-top:0px;
+    font-size:28px;
+    
+  }
+  .card:hover {
+    transform: scale(1.1);
+    /* box-shadow: 5px 5px 15px rgba(0,0,0,0.6); */
+  }
+  .card {
+  
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    margin:0px;
+  } 
+  /* sdsdsdsd */
+  :root {
+    --bg: #1a1e24;
+    --color: #eee;
+    --font: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+    padding: 1rem 0;
+    filter: url('#goo');
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    background: var(--color);
+    color: var(--bg);
+    font-weight: bold;
+    padding: 1.18em 1.32em 1.03em;
+    line-height: 1;
+    border-radius: 1em;
+    position: relative;
+    min-width: 10.23em;
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 0.8rem;
+}
+
+.button:before,
+.button:after {
+    width: 4.4em;
+    height: 2.95em;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: var(--color);
+    border-radius: 50%;
+    transition: transform 1s ease;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.button:before {
+    top: -25%;
+    left: 20%;
+}
+
+.button:after {
+    bottom: -25%;
+    right: 20%;
+}
+
+.button:hover:before,
+.button:hover:after {
+    transform: none;
+}
+
+
+/* Demo styles */
+/* 
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg)
+} */

@@ -1,0 +1,78 @@
+<%- include("../partials/header")%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ira Creations</title>
+        <link rel="stylesheet" href="/stylesheets/campgroundshow.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/stylesheets/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
+    </head>
+<div class="container">
+    
+    <!-- <h2 class="typewriter"><%=campground.name%></h2> -->
+    <h2 class="type"><%=campground.name%></h2>
+        <div class="row">
+            
+            <div class="col-md-8 center">
+                <div class="img-thumbnail" style="margin-bottom: 20px;padding: 0px; ">
+                    <div class=" text-center">
+                        <img class="img-responsive" style="margin-bottom: 20px; padding: 0px;" src="<%=campground.image%>" >
+                    </div>
+                    <div class="caption-full">
+                        
+                        
+                        <p class="desc"><%=campground.desc%></p>
+                        <h4 class="price">₹<%=campground.price%> </h4>
+                        <p>
+                           <em> By <%=campground.author.username%></em>
+                        </p>
+                        <% if(currentUser && campground.author.id.equals(currentUser._id)){%>
+                            <a class="edit" href="<%=campground._id%>/edit">Edit</a>
+                            <form id="delete-form" action="/creations/<%=campground._id%>?_method=DELETE" method="POST" >
+                                <button class="delete">Delete</button>
+                                
+                            </form>
+                        <%}%>
+                    </div>
+                </div>
+                <div class="card card-body " style="margin-bottom: 20px;">
+                    <!-- <div>
+                        <a class="btn btn-success float-right" href="<%=campground._id%>/comments/new">Leave a review</a>
+                    </div> -->
+                    <a href="<%=campground._id%>/comments/new" class="cta float-right">
+                        <span>Click to comment</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                      </a>
+                    <hr>
+                   <%campground.comments.forEach(function(comment){%>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <strong><%=comment.author.username%></strong>
+                                <!-- <span class="float-right">10 days ago</span> -->
+                                <p ><%=comment.text%></p>
+                            </div>
+                        </div>   
+                         
+                        <% if(currentUser && comment.author.id.equals(currentUser._id)){%>
+                        <div> 
+                            <a class="editcom btn float-left" href="/creations/<%=campground._id%>/comments/<%=comment._id%>/edit">Edit</a>  
+                            <form class="delete-form" action="/creations/<%=campground._id%>/comments/<%=comment._id%>?_method=DELETE" method="POST">
+                                <!-- <input type="submit" class="btn btn-xs btn-danger" name="" id="" value="Delete"> -->
+                                <button class="deletecom">Delete</button>
+                            </form>     
+                         <!-- </div> -->
+                        <%}%>    
+                    <%})%>
+                </div>
+            </div>
+        </div>          
+    </div>
+</div>
+<%- include("../partials/footer")%>

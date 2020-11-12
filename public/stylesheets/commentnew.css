@@ -1,0 +1,75 @@
+
+  *{
+    
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+  
+    
+}
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: url("/views/home-page.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    /* font-family: 'Pacifico', cursive; */
+}
+.loginbox{
+    text-align: center;
+    transition: 0.5s;
+}
+.loginbox:hover{
+    -webkit-box-shadow: 10px 10px 56px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 56px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 56px 0px rgba(0,0,0,0.75);
+}
+.loginbox h1{
+    font-size: 2.3rem;
+    font-family: 'Pacifico', cursive;
+    color: whitesmoke;
+
+}
+.loginbox hr{
+    width: 55%;
+    margin: auto;
+    margin-top: 5px;
+    padding: 5px;
+    background: #605C3C;
+    border: none;
+}
+.loginbox input{
+    width: 100%;
+    padding: 1rem;
+    margin: 15px 0px;
+    border: none;
+    color: aliceblue;
+    border-bottom: 1px solid #ffffff;
+    font-weight: 1.5rem;
+    background: transparent;
+    outline: none;
+}
+.loginbox button{
+    padding: 0.5rem 3rem;
+    font-size: 1rem;
+    background-color: transparent;
+    color: whitesmoke;
+    border: #605C3C solid;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 20px;
+}
+.loginbox button:hover{
+    transform: scale(1.05);
+    background-color: #605C3C;
+}
+.back{
+    text-decoration: none;
+}
+.back:hover{
+    text-decoration: none;
+}

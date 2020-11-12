@@ -1,0 +1,71 @@
+<%- include("../partials/header")%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ira Creations</title>
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="/stylesheets/campgroundindex.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/stylesheets/all.min.css">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
+    </head>
+    <!-- <div class="container"> -->
+        <!-- <div class="jumbotron"> -->
+            <div class="text-center head">
+                <h2>Welcome to Ira Creations</h1>
+                <!-- <p>All my creations at one place.</p> -->
+                <p>
+                    <% if(currentUser && currentUser.admin){%>
+                    <!-- <a class="btn btn-primary btn-lg" href="/campgrounds/new">Click to Add</a> -->
+                    <a href="/creations/new" class="cta">
+                        <span>Click to Add</span>
+                        <svg width="8px" height="6px" viewBox="0 0 13 10">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                      </a>
+                    <%}%>
+                </p>
+            </div>
+        <!-- </div> -->
+<div class="container"> 
+        <div class="row text-center" >
+            <% camps.forEach(function(camp){%>
+                <div class="col-md-3 col-sm-6 card">
+                    <div>
+                        <img class="card-img-top" src="<%=camp.image%>">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><%= camp.name%></h5>   
+                        <!-- <p><%=camp.desc%></p>-->
+                        <!-- <a href="/campgrounds/<%=camp.id%>" class="btn btn-primary">More Info</a> -->
+                        <div class="wrapper">
+                            <a class="button" href="/creations/<%=camp.id%>">Click me!</a>
+                        </div>
+                        
+                        <!-- Filter: https://css-tricks.com/gooey-effect/ -->
+                        <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <defs>
+                                <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+                                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                    <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                                </filter>
+                            </defs>
+                        </svg>
+                        
+                    </div>
+                </div>
+            <%});%>
+        </div>
+</div>
+
+    <!-- </div>  -->
+
+<%- include("../partials/footer")%>
+
+
+

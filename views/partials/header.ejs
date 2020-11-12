@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Ira Creations
+        </title>
+         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="/stylesheets/main.css">
+        <link rel="stylesheet" href="/stylesheets/all.min.css">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16">
+      </head>
+    <body>
+        <nav id="header-nav" class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom: 10px;">
+            <a id="brand" class="navbar-brand" href="/"><img src="https://i.imgur.com/PEJMW96.png"  width="55" height="40">Ira Creations</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="collapsable-nav" class="collapse navbar-collapse" id="navbarNav">
+              <ul id="nav-list" class="navbar-nav ml-auto">
+                <%if(!currentUser){ %>
+                  <li class="nav-item">
+                    <a class="nav-link btn from-bottom" href="/creations">
+                      <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn from-bottom" href="/about">
+                        <i class="far fa-address-card"></i>
+                        About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn" href="/login">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Login
+                    </a>
+                </li>
+                <li class="nav-item" >
+                    <a  class="nav-link btn" href="/register">
+                        <i class="fas fa-user-plus"></i>
+                        Sign Up
+                    </a>
+                </li>
+               <% } else { %>
+                  <li class="nav-item">
+                    <a class="nav-link btn" href="#"><i class="far fa-id-badge"></i>Hi, <%= currentUser.username %></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn from-bottom" href="/creations">
+                      <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn" href="/about">
+                        <i class="far fa-address-card"></i>
+                        About
+                    </a>
+                </li>
+                
+                  <li class="nav-item">
+                    <a class="nav-link btn" href="/logout"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                  </li>
+               <%}%>
+              </ul>
+            </div>
+          </nav>
+          <div class="container">
+            <%if(error && error.length>0){%>
+            <div class="alert alert-danger" role="alert">
+              <%=error%>
+            </div>
+            <%}%>
+            <%if(success && success.length>0){%>
+            <div class="alert alert-success" role="alert">
+              <%=success%>
+            </div>
+            <%}%>
+          </div>
+
+
+          
+

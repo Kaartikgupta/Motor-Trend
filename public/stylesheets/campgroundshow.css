@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+*{
+    
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.center{
+    float: none;
+    display: block;
+    margin: 0 auto;
+}
+.img-thumbnail{
+    background-color: rgb(40, 40, 43);
+    border: none;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6); 
+}
+.img-thumbnail img {
+    width: 100%;
+}   
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.caption-full{
+    color: antiquewhite;
+    padding: 5px;
+}
+.edit{
+    border: 1px solid white;
+    color: white;
+    padding: 0.4rem 2rem;
+    border-radius: 20px;
+}
+.edit:hover{
+    text-decoration: none;
+    background-color: aqua;
+}
+.delete{
+    border: 1px solid white;
+    color: black;
+    padding: 0.3rem 1.5rem;
+    border-radius: 20px;
+}
+.delete:hover{
+    text-decoration: none;
+    background-color: red;
+}
+.desc{
+  text-align: left;
+    
+}
+.card{
+    background-color: whitesmoke;
+}
+.cta {
+  
+    text-decoration: none;
+    color: inherit;
+  }
+  .cta:hover {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  
+  .cta {
+    position: relative;
+    margin: auto;
+    padding: 15px 18px;
+    transition: all 0.2s ease;
+  }
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 12%;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(255, 171, 157, 0.5);
+    width: 43px;
+    height: 43px;
+    transition: all 0.3s ease;
+  }
+  .cta span {
+    position: relative;
+    font-size: 13px;
+    text-decoration: none;
+    line-height: 14px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+  .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #111;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  .cta:hover:before {
+    width: 100%;
+    background: #ffab9d;
+  }
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  .cta:active {
+    transform: scale(0.96);
+    text-decoration: none;
+  }
+  
+  .editcom{
+    border: 1px solid rgb(40, 40, 43);
+    color: rgb(40, 40, 43);
+    padding: 0.3rem 2rem;
+    border-radius: 20px;
+}
+.editcom:hover{
+    text-decoration: none;
+    background-color: aqua;
+}
+.deletecom{
+    border: 1px solid rgb(40, 40, 43);
+    color: white;
+    background-color: rgb(40, 40, 43);
+    padding: 0.3rem 1.4rem;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+.deletecom:hover{
+    text-decoration: none;
+    background-color: red;
+}
+.type{
+  font-family: 'Monoton', cursive;
+  font-size: 2.0rem; 
+  text-align: center; 
+  color: whitesmoke;
+  
+}
