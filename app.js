@@ -20,8 +20,8 @@ mongoose.set('useUnifiedTopology', true);
 // mongoose.connect("mongodb://localhost/yelpCamp",{ useNewUrlParser: true });
 
 //seedDB;
-
-mongoose.connect("mongodb+srv://Kaartik:Androidoreo5@cluster0.addl6.mongodb.net/Kaartik?retryWrites=true&w=majority",{ 
+//mongodb+srv://Kaartik:Androidoreo5@cluster0.addl6.mongodb.net/Kaartik?retryWrites=true&w=majority
+mongoose.connect("mongodb+srv://Kaartik:Androidoreo5@cluster1.kqwaw.mongodb.net/Kaartik?retryWrites=true&w=majority",{ 
     useNewUrlParser: true,
     useCreateIndex: true
     }).then(()=>{
