@@ -30,15 +30,15 @@ box-shadow: 10px 10px 56px 0px rgba(0,0,0,0.75);
 .loginbox h1{
     font-size: 3rem;
     font-family: 'Pacifico', cursive;
-    color: whitesmoke;
+    color: rgb(14, 13, 13);
 
 }
 .loginbox hr{
     width: 50%;
     margin: auto;
     margin-top: 5px;
-    padding: 5px;
-    background: #605C3C;
+    padding: 2px;
+    background: #6a96d1;
     border: none;
 }
 .loginbox input{
@@ -46,8 +46,8 @@ box-shadow: 10px 10px 56px 0px rgba(0,0,0,0.75);
     padding: 1.2rem;
     margin: 20px 0px;
     border: none;
-    color: aliceblue;
-    border-bottom: 1px solid #ffffff;
+    color: rgb(20, 20, 20);
+    border-bottom: 1px solid #0e0d0d;
     font-weight: 1.5rem;
     background: transparent;
     outline: none;
@@ -56,8 +56,8 @@ box-shadow: 10px 10px 56px 0px rgba(0,0,0,0.75);
     padding: 0.7rem 3rem;
     font-size: 1rem;
     background-color: transparent;
-    color: whitesmoke;
-    border: #605C3C solid;
+    color: rgb(17, 17, 17);
+    border: rgba(26, 139, 231, 0.5) solid;
     border-radius: 50px;
     cursor: pointer;
     margin-top: 15px;
@@ -65,7 +65,7 @@ box-shadow: 10px 10px 56px 0px rgba(0,0,0,0.75);
 }
 .loginbox button:hover{
     transform: scale(1.05);
-    background-color: #605C3C;
+    background-color: rgba(26, 139, 231, 0.5);
 }
 .back{
     text-decoration: none;
@@ -75,5 +75,5 @@ box-shadow: 10px 10px 56px 0px rgba(0,0,0,0.75);
 }
 .last
 {
-    color: beige;
+    color: rgb(10, 10, 10);
 }

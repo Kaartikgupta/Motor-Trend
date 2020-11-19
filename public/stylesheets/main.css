@@ -52,16 +52,17 @@ body {
   
   #brand
   {
-    color: whitesmoke;
+    color: black;
   }
   .navbar-brand {
     padding-top: 1px;
-    font-size: 1.3em;
+    font-size: 1.4em;
+    margin-left: 15px;
     line-height: 8px;
   }
   .navbar-brand h1 { /* Restaurant name */
     font-family: 'Lora', serif;
-    color: beige;
+    color: black;
     font-size: 1.5em;
     text-transform: uppercase;
     font-weight: bold;
@@ -69,6 +70,7 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     line-height: .75;
+    margin-left: 10px;
   }
   .navbar-brand a:hover, .navbar-brand a:focus {
     text-decoration: none;
@@ -79,11 +81,11 @@ body {
     margin-top: 1px;
   }
   #nav-list a {
-    color: whitesmoke;
+    color: black;
     text-align: center;
   }
   #nav-list a:hover {
-    background: #605C3C;
+    background: #c6e5f3;
   }
   #nav-list a {
     font-size: 0.85em;

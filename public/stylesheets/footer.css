@@ -7,8 +7,19 @@
 
 .footer-distributed{
     margin-top: 15px;
-	background: rgb(20, 20, 20);
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	background:#FFFDE4; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to top,
+         #FFFDE4,
+		 #005AA7
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to top,
+           #005AA7,
+          #FFFDE4
+          
+        ); 
+
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
@@ -33,7 +44,7 @@
 /* The company logo */
 
 .footer-distributed h3{
-	color:  #ffffff;
+	color:  #0f0f0f;
 	font: normal 30px 'Open Sans', cursive;
 	margin: 0;
 }
@@ -45,7 +56,7 @@
 /* Footer links */
 
 .footer-distributed .footer-links{
-	color:  #ffffff;
+	color:  #070707;
 	margin: 20px 0 12px;
 	padding: 0;
 }
@@ -59,7 +70,7 @@
 }
 
 .footer-distributed .footer-company-name{
-	color:  rgb(68, 67, 67);
+	color:  rgb(24, 24, 24);
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
@@ -91,7 +102,7 @@
 
 .footer-distributed .footer-center p{
 	display: inline-block;
-	color: #ffffff;
+	color: #181717;
   font-weight:400;
 	vertical-align: middle;
 	margin:0;
@@ -105,7 +116,7 @@
 }
 
 .footer-distributed .footer-center p a{
-	color:  lightseagreen;
+	color:  rgb(149, 3, 247);
 	text-decoration: none;;
 }
 
@@ -114,7 +125,7 @@
   font-weight:300;
   font-size: 20px;
   left: 0;
-  color: #fff;
+  color: rgb(54, 47, 47);
   display: inline-block;
   padding-right: 5px;
 }
@@ -131,7 +142,7 @@
 
 .footer-distributed .footer-company-about{
 	line-height: 20px;
-	color:  #92999f;
+	color:  #19191a;
 	font-size: 13px;
 	font-weight: normal;
 	margin: 0;
@@ -139,7 +150,7 @@
 
 .footer-distributed .footer-company-about span{
 	display: block;
-	color:  #ffffff;
+	color:  #1f1e1e;
 	font-size: 14px;
 	font-weight: bold;
 	margin-bottom: 20px;

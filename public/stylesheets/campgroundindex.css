@@ -30,7 +30,7 @@ a {
     left: 1%;
     display: block;
     border-radius: 28px;
-    background: rgba(255, 171, 157, 0.5);
+    background: rgba(26, 139, 231, 0.5);
     width: 40px;
     height: 40px;
     transition: all 0.3s ease;
@@ -59,7 +59,7 @@ a {
   }
   .cta:hover:before {
     width: 100%;
-    background: #ffab9d;
+    background:rgba(26, 139, 231, 0.5);
   }
   .cta:hover svg {
     transform: translateX(0);
@@ -70,7 +70,7 @@ a {
   }
   
 .head{
-    color: whitesmoke;
+    color: rgb(31, 30, 30);
 }
 
   .card{
@@ -84,12 +84,12 @@ a {
       height: 180px;
   }
   .card p {
-    color: whitesmoke;
+    color: rgb(24, 23, 23);
     font-size:15px;
     font-weight: 300;
   }
   .card h5 {
-      color: beige;
+      color: rgb(24, 24, 23);
     margin-top:0px;
     font-size:28px;
     
